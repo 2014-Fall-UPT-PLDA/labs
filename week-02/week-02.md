@@ -2,6 +2,10 @@
 
 As a reminder, don't forget that you can consult the Haskell [cheat-sheet](../haskell-cheat-sheet.md) for quick reminders about various things.
 
+# Important!
+
+Work hard, the learning curve for the class will become even more steep. Feel free to contact us with any questions.
+
 ### Lambda calculus
 
 Recall that we implemented the `if` expression in terms of functions, following the tradition of lambda calculus. You can find the implementation in the [if-lambda.hs](./if-lambda.hs)  file.
@@ -29,8 +33,3 @@ Ok, so there are plenty of things to read but nothing makes you understand thing
 ## Reading for week 3
 
 Next week we will go into algebraic, recursive data-types. Using these we will lay the groundwork for the implementation of our first interpreter. Please do some independent study on [defining our own types](http://www.haskell.org/haskellwiki/Algebraic_data_type), and about [type-classes](http://learnyouahaskell.com/types-and-typeclasses).
-
-# Important!
-
-Work hard, the learning curve for the class will become even more steep. Feel free to contact us with any questions.
-
