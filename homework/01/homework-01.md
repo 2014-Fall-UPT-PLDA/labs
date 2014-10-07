@@ -8,7 +8,9 @@ Homework submission guidelines and due date
 -------------------------------------------------------------
 You should show either the TA, or the Instructor a working implementation of the interpreter by **__23:59 October 21st 2014__**. This can be done either in person or via e-mail. Although, preferably, it should be done in person.
 
-The submission is deemed correct *_iff_* the unmodified version of [interpreter-tests.hs](./interpreter-tests.hs) compiles, and all test cases pass. This implies that you can modify the `interpreter.hs` file in any way you deem necessary, as long as you can compile and run the tests without any further modifications.
+The submission is deemed correct *_iff_* the unmodified version of [interpreter-tests.hs](./interpreter-tests.hs) compiles, and all test cases pass. This implies that you can modify the `interpreter.hs` file in any way you find necessary, as long as you can compile and run the tests without their modification.  
+
+*_If you think that you found an error in the test cases, or in the definitions of the data-types please don't hesitate to notify us, so that we can correct them asap! Thank you._*
 
 
 The task at hand
