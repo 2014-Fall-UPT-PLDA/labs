@@ -103,4 +103,5 @@ More information in the description of [homework 01](../homework/01/homework-01.
 Difference between Object Oriented decomposition and Functional decomposition
 ------------------------------------------------------------------------------
 
+Stay tuned. Try to recall what we discussed during the lab. The OO representation of the AST, the vulnerabilities of OO decomp, and functional decomp respectively. And the visitor pattern, insofar as it is analogous to functional decomposition.
 
