@@ -1,7 +1,7 @@
 Homework 01 - Functional Expression Language Interpreter
 ===============================================================================
 
-Don't forget to check everything else within this repository as a reference.  
+Don't forget to check everything else within this repository as a reference. The [cheat-sheet](../../haskell-cheat-sheet.md) is always a good thing to use.  
 
 
 Homework submission guidelines and due date
@@ -73,9 +73,17 @@ You will need to evaluate expressions in the appropriate environment (that's why
 
 Testing
 -------------------------------------------------------------
+
 You should load the `interpreter-tests.hs` file directly into `ghci` instead of `interpreter.hs`. The tests depend on the interpreter, so both of them will be loaded anyway.  You can then proceed to evaluate the *no-arg* function `> testAll` to run all test cases. Or, you can run each individual test.  
 
 The tests aren't written with any of the standard Haskell unit testing libraries because that would have required explicit installation of these modules in the lab, which, at this point is a total pain.  
 
 The test cases aren't exaustive. You should write some of your own.
 
+
+Other references
+-------------------------------------------------------------
+
+Taken straight from [last year's description](http://bigfoot.cs.upt.ro/~marius/curs/plda/2013/hw1.html):
+
+The [PLAI book](http://cs.brown.edu/~sk/Publications/Books/ProgLangs/) has an in-depth discussion (sec. II-IV) of building an interpreter. Here's an example of [an SML interpreter](http://www.cs.cornell.edu/courses/cs312/2005sp/lectures/lec17.asp) (with more features) from a course at Cornell.
