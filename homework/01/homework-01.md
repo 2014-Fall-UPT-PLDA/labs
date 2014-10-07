@@ -1,11 +1,14 @@
 Homework 01 - Functional Expression Language Interpreter
 ===============================================================================
 
+Don't forget to check everything else within this repository as a reference.  
+
+
 Homework submission guidelines and due date
 -------------------------------------------------------------
-You should show either the TA, or the Instructor a working implementation of the interpreter by 23:59 October 21st 2014. This can be done either in person or via e-mail. Although, preferably, it should be done in person.
+You should show either the TA, or the Instructor a working implementation of the interpreter by **__23:59 October 21st 2014__**. This can be done either in person or via e-mail. Although, preferably, it should be done in person.
 
-The submission is deemed correct *iff* the unmodified version of [interpreter-tests.hs](./interpreter-tests.hs) compiles, and all test cases pass. This implies that you can modify the interpreter.hs file in any way you deem necessary as long as you can compile and run the tests with any further modifications.
+The submission is deemed correct *_iff_* the unmodified version of [interpreter-tests.hs](./interpreter-tests.hs) compiles, and all test cases pass. This implies that you can modify the `interpreter.hs` file in any way you deem necessary, as long as you can compile and run the tests without any further modifications.
 
 
 The task at hand
