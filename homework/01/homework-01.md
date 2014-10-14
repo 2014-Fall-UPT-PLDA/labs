@@ -8,7 +8,7 @@ Homework submission guidelines and due date
 -------------------------------------------------------------
 You should show either the TA, or the Instructor a working implementation of the interpreter by **__23:59 October 21st 2014__**. This can be done either in person or via e-mail. Although, preferably, it should be done in person.
 
-The submission is deemed correct *_iff_* the unmodified version of [Interpreter-tests.hs](./interpreter-tests.hs) compiles, and all test cases pass. This implies that you can modify the `interpreter.hs` file in any way you find necessary, as long as you can compile and run the tests without their modification.  
+The submission is deemed correct *_iff_* the unmodified version of [Interpreter-tests.hs](./Interpreter-tests.hs) compiles, and all test cases pass. This implies that you can modify the `interpreter.hs` file in any way you find necessary, as long as you can compile and run the tests without their modification.  
 
 *_If you think that you found an error in the test cases, or in the definitions of the data-types please don't hesitate to notify us, so that we can correct them asap! Thank you._*
 
@@ -16,7 +16,7 @@ The submission is deemed correct *_iff_* the unmodified version of [Interpreter-
 The task at hand
 -------------------------------------------------------------
 
-Your task is to implement an interpreter for the programming language who's structure is dictated by the abstract-syntax-tree listed bellow; and who's semantics are described by the test cases found in the [Interpreter-tests.hs](./interpreter-tests.hs) file.
+Your task is to implement an interpreter for the programming language who's structure is dictated by the abstract-syntax-tree listed bellow; and who's semantics are described by the test cases found in the [Interpreter-tests.hs](./Interpreter-tests.hs) file.
 
 ```Haskell
 data Val = IntVal Integer
@@ -76,7 +76,7 @@ You will need to evaluate expressions in the appropriate environment (that's why
 Testing
 -------------------------------------------------------------
 
-You should load the `interpreter-tests.hs` file directly into `ghci` instead of `interpreter.hs`. The tests depend on the interpreter, so both of them will be loaded anyway.  You can then proceed to evaluate the *no-arg* function `> testAll` to run all test cases. Or, you can run each individual test.  
+You should load the `Interpreter-tests.hs` file directly into `ghci` instead of `interpreter.hs`. The tests depend on the interpreter, so both of them will be loaded anyway.  You can then proceed to evaluate the *no-arg* function `> testAll` to run all test cases. Or, you can run each individual test.  
 
 The tests aren't written with any of the standard Haskell unit testing libraries because that would have required explicit installation of these modules in the lab, which, at this point is a total pain.  
 
