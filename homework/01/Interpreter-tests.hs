@@ -15,6 +15,26 @@ testAddition =
 
 ---------------------------------------------------------------------
 
+testComplexAddition = 
+  assert result (IntVal 9) "testComplexAddition"
+  where result = interpret expr
+        expr = (lhs :+: rhs)
+        lhs = (Const (IntVal 1)) :+: (Const (IntVal 1))
+        rhs = (Const (IntVal 3)) :+: (Const (IntVal 4))
+
+---------------------------------------------------------------------
+
+testEvenMoreComplexAddition = 
+  assert result (IntVal 18) "testEvenMoreComplexAddition"
+  where result = interpret expr
+        expr = (l :+: r)
+        l = lhs :+: rhs
+        r = rhs :+: lhs
+        lhs = (Const (IntVal 1)) :+: (Const (IntVal 1))
+        rhs = (Const (IntVal 3)) :+: (Const (IntVal 4))
+
+---------------------------------------------------------------------
+
 testMultiplication = 
   assert result (IntVal 42) "testMultiplication"
   where result = interpret expr
@@ -108,6 +128,8 @@ testAll =
     else error "Failed tests."
   where allPassed = testConstant &&
                     testAddition &&
+                    testComplexAddition &&
+                    testEvenMoreComplexAddition &&
                     testMultiplication &&
                     testConcatenation &&
                     testEqualString &&
