@@ -122,6 +122,24 @@ testLambdaAndApply =
 
 ---------------------------------------------------------------------
 
+testCurrying =
+  assert result (IntVal 42) "testCurrying"
+  where result = interpret expr
+        --equivalent to: ((\x -> \y -> x * y) 6) 7
+        expr = (Apply
+                 (Apply
+                    (Lambda [Var "x"]
+                      (Lambda [Var "y"]
+                        (Var "x") :*: (Var "y")
+                      )
+                    )
+                    [Const (IntVal 6)]
+                  )
+                 [Const (IntVal 7)]
+               )
+
+---------------------------------------------------------------------
+
 testAll = 
   if (allPassed) 
     then "All tests passed."
@@ -137,7 +155,8 @@ testAll =
                     testEqualBool &&
                     testIf &&
                     testLet &&
-                    testLambdaAndApply
+                    testLambdaAndApply &&
+                    testCurrying
 
 ---------------------------------------------------------------------
 assert :: Val -> Val -> String -> Bool
