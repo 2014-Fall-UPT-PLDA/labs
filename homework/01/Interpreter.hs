@@ -1,5 +1,7 @@
 module Interpreter (Val(..), Expr(..), interpret) where
 
+import Debug.Trace
+
 data Val = IntVal Integer
          | StringVal String
          | BooleanVal Bool
@@ -40,8 +42,12 @@ data Env = EmptyEnv
 
 -- the evaluate function takes an environment, which holds variable
 -- bindings; i.e. it stores information like `x = 42`
+-- the trace there will print out the values with which the function was called,
+-- you can easily uncomment it if you don't need it for debugging anymore.
 evaluate:: Expr -> Env -> Val
-evaluate expr env = case expr of
+evaluate expr env = 
+  trace("expr= " ++ (show expr) ++ "\n env= " ++ (show env)) $
+  case expr of
   Const v -> v
   _ -> undefined
 
