@@ -49,7 +49,19 @@ evaluate expr env =
   trace("expr= " ++ (show expr) ++ "\n env= " ++ (show env)) $
   case expr of
   Const v -> v
-  _ -> undefined
+  lhs :+: rhs -> 
+    let valLhs = evaluate lhs env
+        valRhs = evaluate rhs env
+    in (IntVal $ (valToInteger valRhs) + (valToInteger valLhs))
+  _ -> error $ "unimplemented expression: " ++ (show expr)
+
+-----------------------------------------------------------
+valError s v = error $ "expected: " ++ s ++ "; got: " ++ (show v)
+
+-- helper function to remove some of the clutter in the evaluate function
+valToInteger:: Val -> Integer
+valToInteger (IntVal n) = n
+valToInteger v = valError "IntVal" v
 
 -----------------------------------------------------------
 -- just an alias that we export in the module definition 

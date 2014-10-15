@@ -3,6 +3,7 @@ Homework 01 - Functional Expression Language Interpreter
 
 Don't forget to check everything else within this repository as a reference. The [cheat-sheet](../../haskell-cheat-sheet.md) is always a good thing to use.  
 
+For ease of reference we'll call the language we're developing here FELI.
 
 Homework submission guidelines and due date
 -------------------------------------------------------------
