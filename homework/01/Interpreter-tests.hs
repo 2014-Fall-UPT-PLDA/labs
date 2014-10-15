@@ -115,7 +115,7 @@ testLambdaAndApply =
         -- equivalent to: (\x y -> x * y) 6 7
         expr = (Apply 
                   (Lambda [Var "x", Var "y"]
-                     (Var "x") :*: (Var "y")
+                     ((Var "x") :*: (Var "y"))
                   )
                   [Const (IntVal 6), Const (IntVal 7)]
                )
@@ -130,12 +130,12 @@ testCurrying =
                  (Apply
                     (Lambda [Var "x"]
                       (Lambda [Var "y"]
-                        (Var "x") :*: (Var "y")
+                        ((Var "x") :*: (Var "y"))
                       )
                     )
-                    [Const (IntVal 6)]
+                    ([Const (IntVal 6)])
                   )
-                 [Const (IntVal 7)]
+                 ([Const (IntVal 7)])
                )
 
 ---------------------------------------------------------------------
