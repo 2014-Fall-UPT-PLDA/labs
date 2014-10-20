@@ -5,13 +5,15 @@ Don't forget to check everything else within this repository as a reference. The
 
 For ease of reference we'll call the language we're developing here FELI.
 
-Homework submission guidelines and due date
+Homework submission guidelines, and due date
 -------------------------------------------------------------
 You should show either the TA, or the Instructor a working implementation of the interpreter by **__23:59 October 21st 2014__**. This can be done either in person or via e-mail. Although, preferably, it should be done in person.
 
 The submission is deemed correct *_iff_* the unmodified version of [Interpreter-tests.hs](./Interpreter-tests.hs) compiles, and all test cases pass. This implies that you can modify the `interpreter.hs` file in any way you find necessary, as long as you can compile and run the tests without their modification.  
 
-*_If you think that you found an error in the test cases, or in the definitions of the data-types please don't hesitate to notify us, so that we can correct them asap! Thank you._*
+*_If you think that you found an error in the test cases, or in the definitions of the data-types please don't hesitate to notify us, so that we can correct them asap! Thank you._*  
+
+*_Late submissions_:* if, for any reason, you cannot make the deadline then you have two more weeks to submit your homework (until Nov 4th, 23:59). For each week you are late you will be deducted 1 point, so you can lose up to two points. Also, coding standards will be higher when you submit late, i.e. if you submit on time I won't take into acount code readability, but it becomes an issue if you submit late.
 
 
 The task at hand
