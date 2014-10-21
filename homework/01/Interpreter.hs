@@ -35,7 +35,7 @@ data Expr = Const Val
 -----------------------------------------------------------
 
 data Env = EmptyEnv
-         | ExtendEnv String Val
+         | ExtendEnv String Val Env
      deriving (Show, Eq)
 
 -----------------------------------------------------------
