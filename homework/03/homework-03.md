@@ -78,12 +78,12 @@ Remember, that this rule is true if both the `firstPredicate` and `secondPredica
 Implementation tips.
 ------------------------------------------------------------------------------
 
-Straight from [last year's](http://bigfoot.cs.upt.ro/~marius/curs/plda/2013/hw4.html) homework:  
-*"Evaluation of a [goal](./homework-03.md#L50) is done by unifying it with the head of a rule, and then evaluating the subgoals in the rule attempting to make them true.  
+Straight from [last year's](http://bigfoot.cs.upt.ro/~marius/curs/plda/2013/hw4.html) homework:    
 
-Before unification, the variables in the rule head and body have to be renamed to fresh variables."*.
 
-Remember the
+*_Evaluation of a [goal](./homework-03.md#L50) is done by unifying it with the head of a rule, and then evaluating the subgoals in the rule attempting to make them true._*  
+
+*_Before unification, the variables in the rule head and body have to be renamed to fresh variables._*
 
 
 Important:
