@@ -14,8 +14,6 @@ case class Rule(head: Predicate, body: Seq[Predicate])
 
 object PrologSyntax {
   implicit class RichPrologString(constString: String) {
-    def something: String = "something"
-
     def ->(constant: String): Predicate =
       Predicate(constString, constant)
   }

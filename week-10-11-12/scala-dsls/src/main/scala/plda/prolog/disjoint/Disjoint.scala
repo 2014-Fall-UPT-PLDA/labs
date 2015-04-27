@@ -32,9 +32,10 @@ class DisjointSyntaxAndData {
   }
 
   def rule = {
-    val head = "suitandTieMotherfucker" -> ("bunk")
-    val body1 = "wearsSuits" -> ("bunk")
-    val body2 = "wearsTies" -> ("bunk")
-    head :- (body1 && body2 && body2)
+    Predicate("is", "something")
+    "suitandTieMotherfucker" -> ("bunk") :-
+    ("wearsSuits" -> ("bunk") && 
+        "wearsTies" -> ("bunk"))
+    
   }
 }
